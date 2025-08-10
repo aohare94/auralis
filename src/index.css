@@ -1,0 +1,25 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+@keyframes rainbowFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-rainbow-text {
+  background-size: 200% 200%;
+  animation: rainbowFlow 4s linear infinite;
+}
+
+/* Slightly faster and less gradient for the no-media state */
+.animate-rainbow-text-fast {
+  background-size: 180% 180%;
+  animation: rainbowFlow 2.8s linear infinite;
+}
