@@ -1,5 +1,6 @@
-
 # Auralis — Wave Meter
+
+<img width="934" height="151" alt="image" src="https://github.com/user-attachments/assets/65555a16-c3d5-437b-915e-e225c57bb74c" />
 
 A glowing, cascading sine wave visualizer with an accurate volume bar. Uses Web Audio + Canvas.
 Vite + React + Tailwind frontend. Purely client-side.
@@ -37,10 +38,12 @@ python -m http.server 5173
 ```
 
 ## Defaults & behavior
+
 - On first load the app tries `/test_audio/default.wav`. If it’s missing, no error is shown; use Browse to pick a file.
 - Interactions (play/pause/seek) are disabled until a track is loaded.
 
 ## Local dev preview
+
 After build, you can preview locally with Vite:
 
 ```bash
@@ -48,6 +51,7 @@ npm run preview
 ```
 
 ## Windows one-click launcher (BAT)
+
 Place this file next to `index.html` inside `dist/` and double-click it to run without Node. It will use Python if present, otherwise a PowerShell fallback server, and open your browser.
 
 ```
@@ -121,6 +125,7 @@ exit /b 0
 ```
 
 ## Notes
+
 - Microphone access requires a user gesture and permission.
 - Wave motion intensity scales with RMS volume; dominant frequency is approximated from analyser bins.
 - Microphone access requires a user gesture and permission.

@@ -1,7 +1,10 @@
 # .gitignore
 node_modules/
 dist/
+SAMPLES/
 *.log
 .DS_Store
 .env
 *.local
+auralis.bat
+auralis_wave_meter_v1.zip
